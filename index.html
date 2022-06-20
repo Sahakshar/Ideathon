@@ -13,6 +13,7 @@
     <!-- Own CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive-style.css">
+    <link rel = "icon" type = "image/jpg" href = "./images/logo.jpg">
 
 </head>
 <body>
@@ -21,7 +22,6 @@
         <nav class="navbar navbar-expand-lg navigation-wrap">
             <div class="container">
               <div class="navbar-brand-div"><a class="navbar-brand" target="_blank" href="https://sahaksharconsultan.wixsite.com/sahashodh"><img src="./images/logo.jpg" alt=""></a></div>
-              <!-- <p>Where ideas thrive</p> -->
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-stream navbar-toggler-icon"></i>
               </button>
@@ -47,6 +47,9 @@
             </div>
           </nav>    
     </header>
+
+  <!-- header design-->
+
  <!-- section-1 top banner -->
  <section id="home" class="odd-section">
     <div class="container-fluid px-0">
@@ -56,15 +59,35 @@
             <img src="./images/manufacturetocat.png" alt="">
           </div>
           <div class="col-lg-6 col-md-6">
-            <h1>Get ready for the exciting challenge</h1>
+            <h2>Get ready for the exciting challenge</h2>
             <p>Do you have a fantastic idea you would like to share?          
-            Or if you have a solution approach to a real world problem,<br>            
-            you have come at a right spot, submit your idea today to win exciting prizes
+            Or if you have a solution approach to a real world problem,          
+            you have come at a right spot, participate in <b>SahaKalpana</b> today & submit your idea 
+            to win exciting prizes.</p>
             
             <div class="mt-4">
               <a href="https://forms.gle/7TLETehKiFnbeWZj6" target="_blank"><button class="main-btn">Register Now <i class="fa-solid fa-circle-arrow-right ps-3"></i></button></a>
-              <a href="./highlights.html" target="_blank"><button class="white-btn ms-lg-4 mt-lg-0 mt-4">Check Highlights<i class="fas fa-angle-right ps-3"></i></button></a>
+              <a href="#prizes-partners"><button class="white-btn ms-lg-4 mt-lg-0 mt-4">Prizes & Partners<i class="fas fa-angle-right ps-3"></i></button></a>
             </div>
+
+            <ul id="countdown">
+              <li id="days">
+                <div class="number" id="day">00</div>
+                <div class="label">Days</div>
+              </li>
+              <li id="hours">
+                <div class="number" id="hour">00</div>
+                <div class="label">Hours</div>
+              </li>
+              <li id="minutes">
+                <div class="number" id="minute">00</div>
+                <div class="label">Mins</div>
+              </li>
+              <li id="seconds">
+                <div class="number" id="second">00</div>
+                <div class="label">Secs</div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -74,11 +97,12 @@
 
     <!-- section-2 rules -->
    <section id="rules" class="even-section">
-    <div class="about-section wrapper">
+    <div class="about-section">
       <div class="container imp-dates">
         <div class="row align-items-center">
           <div class="text-sec">
            <h2>The Idea should be new, unique and implementable.</h2>
+            <div id="event-dates">
            <p>Important Dates:-</p>
            <ul class="list-unstyled">
             <li>Start submiting your ideas on: 01/07/2022</li>
@@ -94,8 +118,16 @@
              <li>Entry fees Rs.100(per team)</li>
            </ul>
           </div>
+          <div id="qrcode-payment">
+            <img src="./images/qr_code.jpg">
+            <p>Make payment using this QR code before submitting idea.</p>
+          </div>
+          </div>
           <br>
-          <p>You can also email your idea in PDF/Word/Design document/Image to sahaksharconsultancy@gmail.com</p>
+          <p>Elaborate on how you will implement the idea, which tech stack you can use. Actual implementation
+            is not needed, but if you have similar implemented stuff or references, you can share links.
+          </p>
+          <p>You can also email your idea in PDF/Word/Design document/Image to sahaksharcompetitions@gmail.com</p>
         </div>
       </div>
     </div>
@@ -107,7 +139,7 @@
   <section id="sample-ideas" class="odd-section">
           <div class="container">
             <div class="row">
-              <h2 id="sample-ideas-title">Themes</h2>
+              <h2 class="align-center">Themes</h2>
             <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
               <img src="./images/sample-ideas/hiring.jpg" alt="" class="card-img-top">
@@ -121,8 +153,7 @@
           <div class="card h-100">
               <img src="./images/sample-ideas/env.jpg" alt="" class="card-img-top">
               <div class="card-body">
-                <h5 class="card-title">Solve environmental issues</h5>
-                
+                <h5 class="card-title">Solve environmental issues</h5>                
                   <ul>
                     <li>Disposing plastic in safe manner</li>
                     <li>Ways to Reduce pollution</li>
@@ -170,14 +201,84 @@
                    </div>
                   </div>
           </div>
-        </div>
-        
+        </div>       
    
   </section>
 
   <!-- sample ideas -->
-   <!-- section-4 about us -->
-   <section id="about-us" class="even-section">
+
+<!-- section-4 prizes & partners -->
+<section id="prizes-partners" class="even-section align-center">
+  <div class="container">
+    <div class="row">
+      <div id="prizes">
+        <h2>Prizes</h2>
+        <div id="prize-amounts">
+          <div id="first-winner">            
+            <i class="fa-solid fa-trophy"></i>
+            <span>1st Winner-Rs.10,000</span>
+            </div>
+          <div id="second-winner">
+            <i class="fa-solid fa-award"></i>
+            <span>2nd Winner-Rs.5,000</span>
+          </div>
+          <div id="runner-up">
+            <i class="fa-solid fa-medal"></i>
+            <span>Rockers(5 teams) -Rs.1,000</span>
+          </div>
+          </div>
+          <br>
+    </div>
+    <div class="container" id="partners">
+      <div class="row">
+        <h3 class="align-center">Interview Calls & Internship Chances From Our Partners</h3>
+        <p>Your profiles will be shared with these IT firms & you will get job/internship opportunities</p>
+      <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card h-100">
+        <a href="https://wallmag.io" target="_blank">
+        <div class="card-body">
+          <div class="logo-title">
+            <img src="./images/partners-logos/wallmag.png"></img>
+          <h3 class="card-title">WallMag</h3>
+          </div>
+          <span>6th floor,Bhamashah Techno Hub, Rajasthan 302033</span>
+        </div>
+      </a>
+       </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card h-100"> 
+        <a href="https://newsoft.co.in" target="_blank">
+        <div class="card-body">
+          <div class="logo-title">
+            <img src="./images/partners-logos/newsoft.png"></img>
+          <h3 class="card-title">NewSoft Solutions Pvt. Ltd.</h3>
+          </div>
+            <span>266/3, Jodbasavanna Chowk, Solapur</span>
+        </div>
+        </a>
+       </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100"> 
+          <a href="https://forms.gle/K1LiHmf3atQZkJtX6" target="_blank">
+          <div class="card-body">
+            <div class="logo-title">
+              <i class="fa-solid fa-handshake-simple"></i>
+            <h3 class="card-title">Join Us As Partner</h3>
+            </div>
+              <span>Want to hire a top talent? Click here for further details.</span>
+          </div>
+          </a>
+         </div>
+        </div>
+    </div>
+  </div>
+  </div>
+</section>
+<!-- prizes & partners -->
+   <!-- section-5 about us -->
+   <section id="about-us" class="odd-section">
       <div class="container">
         <div class="row">
           <h2>About Us</h2>
@@ -186,33 +287,71 @@
             in right hands. We here at <b>Sahakshar Consultancy</b> help students/professionals to get 
             job in IT industry. We give trainings on latest technologies and make them job ready.</p>
           </div>
-          <div class="about-us-contact">
-          <div>
-          <h3>Why Us</h3>
-          <ul>
-            <li>We offer best learning paths</li>
-             <li>Your payments will be used for social cause</li>
-             <li>Help in applying for jobs & preparig for interviews</li>
-             <li>Limited seats & focused approach</li>
-           </ul> 
+          <div id="about-devs-contact">
+            <div class="about-devs">
+              <div class="dev-info">
+              <img src="./images/developers/veena_kamurti.jpg">
+              <div>
+                <div class="name-linkedin">
+                <span>Veena Kamurti</span>
+                <span>
+                  <a href="https://www.linkedin.com/in/vstackveena" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </span>
+                </div>
+                <span>CEO of SahaKshar & Developer</span>
+              </div>
+              </div>
+                <div class="dev-info">
+              <img src="./images/developers/vrunda_ghate.jpg">
+              <div>
+                <div class="name-linkedin">
+                <span>Vrunda Ghate</span>
+                <span>
+                  <a href="https://www.linkedin.com/in/ghatevrunda" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </span>
+                </div>
+                <span>Web Developer</span>                
+              </div>
+              </div>
+              </div>            
+
+            <div class="about-us-contact">
+              <div id="why-us">
+              <h3>Why Us</h3>
+              <ul>
+                <li>We offer best learning paths</li>
+                 <li>Your payments will be used for social cause</li>
+                 <li>Help in applying for jobs & preparig for interviews</li>
+                 <li>Limited seats & focused approach</li>
+               </ul> 
+               </div>
+                <div id="contact-us">
+                  <h3>Get in touch</h3>
+                  <ul class="list-unstyled">
+                    <li><i class="fa-solid fa-envelope"></i><span>sahaksharconsultancy@gmail.com</span></li>
+                    <li><i class="fa-solid fa-phone"></i><span>+91 8087116728</span></li>
+                    <li><i class="fa-solid fa-square-arrow-up-right"></i><span><a href="https://bit.ly/sahakshar" target="_blank">bit.ly/sahakshar</a></span></li>
+                    <li><i class="fa-brands fa-twitter-square"></i><span><a href="https://mobile.twitter.com/sahakshar " target="_blank">sahakshar</a></span></li>
+                    
+                  </ul> 
+                </div>       
            </div>
-           <div id="contact-us">
-             <h3>Get in touch</h3>
-             <ul class="list-unstyled">
-               <li><i class="fa-solid fa-envelope"></i><span>sahaksharconsultancy@gmail.com</span></li>
-               <li><i class="fa-solid fa-mobile-screen-button"></i><span>+91 8087116728</span></li>
-               <li><i class="fa-solid fa-square-arrow-up-right"></i><span><a href="https://bit.ly/sahakshar" target="_blank">bit.ly/sahakshar</a></span></li>
-               
-             </ul> 
-           </div>
-           </div>
-        
+           </div>        
       </div>
     </section>  
-     <!-- about us -->
+    <!-- about us -->
 
+    <!-- footer -->
+<footer class="page-footer font-small">
+  <!-- copyright -->
+  <div class="footer-copyright text-center py-2">© 2022 Copyright :
+    <a href="https://bit.ly/sahakshar" target="_blank"> Sahakshar Consultancy</a>
+  </div>
+  <!-- copyright -->
+</footer>
+    <!-- footer -->
     <!-- bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
     <!-- own JS -->
     <script src="js/main.js"></script>
 
