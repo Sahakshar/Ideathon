@@ -1,60 +1,87 @@
 @media (max-width: 991px) {
+  /*custom classes  */
+  .text-content {
+    width: 100%;
+  }
 
-    /*custom classes  */
-    .text-content{
-        width:100%;
-    }
-     
+  /* navbar brand */
+  .navigation-wrap .navbar-brand img {
+    height: 3.7125rem;
+    width: 3.935rem;
+  }
+  .navigation-wrap {
+    text-align: center;
+    background-color: #151b54;
+  }
+  .navigation-wrap .nav-link {
+    line-height: 1.875rem;
+  }
+  /* Banner Design */
+  .top-banner {
+    padding: 7.5rem 0 4.275rem;
+  }
 
-    /* navbar brand */
-    .navigation-wrap .navbar-brand img{
-        height: 3.7125rem;
-        width: 3.935rem;
-    }
-    .navigation-wrap{
-        text-align: center;
-        background-color: #151B54;
-    }
-    .navigation-wrap .nav-link{
-        line-height: 1.875rem;
-    }
-    /* Banner Design */
-    .top-banner{
-        padding:9.375rem 0 9.375rem;
-    }
-     
+  /* prizes &partners */
+  #prize-amounts {
+    font-size: 1rem;
+  }
+
+  /* countdown */
+  #countdown {
+    margin: 0px;
+  }
+
+  ul#countdown .label {
+    font-size: 0.8rem;
+  }
 }
 
 @media (max-width: 767px) {
+  /* custom css */
+  h1 {
+    font-size: 2.8rem;
+  }
+  h2 {
+    font-size: 2rem;
+    line-height: 2.0625rem;
+  }
 
-    /* custom css */
-    h1{
-        font-size:2.8rem;
-    }
-    h2{
-        font-size:2rem;
-        line-height: 2.0625rem;
-    }
-     
+  /* footer link */
+  .footer .footer-link,
+  .footer a i {
+    padding: 0 0.7rem;
+  }
 
-    /* top banner */
-    .top-banner{
-        padding:10.875rem 0 9.375rem;
-    }
+  .about-us-contact {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-us-contact > div {
+    padding-top: 2rem;
+  }
 
-    /* footer link */
-    .footer .footer-link,
-    .footer a i{
-        padding:0 0.7rem;
-    }
+  #about-devs-contact {
+    flex-direction: column;
+  }
 
-    .about-us-contact{
-        display: flex;
-        flex-direction: column;
-      }
-      .about-us-contact>div{
-        padding-top: 2rem;
-      }
+  /* prizes & partners */
+  #prize-amounts {
+    flex-direction: column;
+    line-height: 2.3rem;
+  }
+
+  /* Rules */
+  #event-dates,
+  #qrcode-payment {
+    display: block;
+    width: 100%;
+  }
+
+  #qrcode-payment > img {
+    margin: 0 auto;
+  }
+
+  #qrcode-payment > p {
+    margin-left: 0;
+  }
 }
-
-        
